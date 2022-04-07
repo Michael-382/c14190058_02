@@ -366,7 +366,7 @@ class MyApp extends StatelessWidget {
                                 children: [
                                   Row(
                                     children: [
-                                      Text("Basic of Designing"),
+                                      Text("Bassic of Designing"),
                                     ],
                                   ),
                                   Row(
