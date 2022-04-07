@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
             child: Column(
               children: [
                 const Padding(
-                  padding: EdgeInsets.only(bottom: 4.0),
+                  padding: EdgeInsets.fromLTRB(18.0, 0.0, 18.0, 18.0),
                   child: Text(
                     "Popular Courses : ",
                     style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
@@ -100,7 +100,7 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
                 const Padding(
-                  padding: EdgeInsets.only(bottom: 4.0),
+                  padding: EdgeInsets.fromLTRB(18.0, 0.0, 18.0, 18.0),
                   child: Text(
                     "Popular Courses : ",
                     style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
@@ -115,22 +115,7 @@ class MyApp extends StatelessWidget {
                         Container(
                           color: Color.fromARGB(255, 173, 255, 245),
                           child: Column(
-                            children: [
-                              Icon(
-                                Icons.science,
-                                color: Colors.blue,
-                                size: 24,
-                              ),
-                              Text(
-                                "Science",
-                                style: TextStyle(color: Colors.blue),
-                              ),
-                            ],
-                          ),
-                        ),
-                        Container(
-                          color: Color.fromARGB(255, 173, 255, 245),
-                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Icon(
                                 Icons.science,
@@ -138,32 +123,27 @@ class MyApp extends StatelessWidget {
                                 size: 24,
                               ),
                               Column(
-                                children: [
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: const [
                                   Text(
                                     "Science",
                                     style: TextStyle(color: Colors.black),
                                   ),
                                   Text(
                                     "Chapter 4",
-                                    style: TextStyle(color: Colors.black, fontWeight:FontWeight.bold
+                                    style: TextStyle(
+                                        color: Colors.black,
+                                        fontWeight: FontWeight.bold),
                                   ),
                                 ],
-                              )
-                            ],
-                          ),
-                        ),
-                        Container(
-                          color: Color.fromARGB(255, 173, 255, 245),
-                          child: Column(
-                            children: [
-                              Icon(
-                                Icons.science,
-                                color: Colors.blue,
-                                size: 24,
                               ),
-                              Text(
-                                "Science",
-                                style: TextStyle(color: Colors.blue),
+                              Row(
+                                children: [
+                                  Icon(
+                                    Icons.watch,
+                                  ),
+                                  Text(" 27 mins")
+                                ],
                               ),
                             ],
                           ),
@@ -171,15 +151,107 @@ class MyApp extends StatelessWidget {
                         Container(
                           color: Color.fromARGB(255, 173, 255, 245),
                           child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Icon(
                                 Icons.science,
                                 color: Colors.blue,
                                 size: 24,
                               ),
-                              Text(
-                                "Science",
-                                style: TextStyle(color: Colors.blue),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: const [
+                                  Text(
+                                    "Science",
+                                    style: TextStyle(color: Colors.black),
+                                  ),
+                                  Text(
+                                    "Chapter 4",
+                                    style: TextStyle(
+                                        color: Colors.black,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                ],
+                              ),
+                              Row(
+                                children: [
+                                  Icon(
+                                    Icons.watch,
+                                  ),
+                                  Text(" 27 mins")
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                        Container(
+                          color: Color.fromARGB(255, 173, 255, 245),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Icon(
+                                Icons.science,
+                                color: Colors.blue,
+                                size: 24,
+                              ),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: const [
+                                  Text(
+                                    "Science",
+                                    style: TextStyle(color: Colors.black),
+                                  ),
+                                  Text(
+                                    "Chapter 4",
+                                    style: TextStyle(
+                                        color: Colors.black,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                ],
+                              ),
+                              Row(
+                                children: [
+                                  Icon(
+                                    Icons.watch,
+                                  ),
+                                  Text(" 27 mins")
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                        Container(
+                          color: Color.fromARGB(255, 173, 255, 245),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Icon(
+                                Icons.science,
+                                color: Colors.blue,
+                                size: 24,
+                              ),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: const [
+                                  Text(
+                                    "Science",
+                                    style: TextStyle(color: Colors.black),
+                                  ),
+                                  Text(
+                                    "Chapter 4",
+                                    style: TextStyle(
+                                        color: Colors.black,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                ],
+                              ),
+                              Row(
+                                children: [
+                                  Icon(
+                                    Icons.watch,
+                                  ),
+                                  Text(" 27 mins")
+                                ],
                               ),
                             ],
                           ),
@@ -188,9 +260,155 @@ class MyApp extends StatelessWidget {
                     ),
                   ),
                 ),
+                const Padding(
+                  padding: EdgeInsets.fromLTRB(18.0, 0.0, 18.0, 18.0),
+                  child: Text(
+                    "Last Seen Courses : ",
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                  ),
+                ),
+                Container(
+                  child: Padding(
+                    padding: const EdgeInsets.fromLTRB(18.0, 0.0, 18.0, 18.0),
+                    child: Container(
+                      color: Color.fromARGB(255, 173, 255, 245),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Row(
+                            children: [
+                              Icon(
+                                Icons.watch,
+                              ),
+                              Column(
+                                children: [
+                                  Row(
+                                    children: [
+                                      Text("Basic of Designing"),
+                                    ],
+                                  ),
+                                  Row(
+                                    children: [
+                                      Text("1 hour, 25mins"),
+                                    ],
+                                  )
+                                ],
+                              ),
+                            ],
+                          ),
+                          Column(
+                            children: [
+                              Icon(
+                                Icons.feed,
+                              ),
+                            ],
+                          )
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+                Container(
+                  child: Padding(
+                    padding: const EdgeInsets.fromLTRB(18.0, 0.0, 18.0, 18.0),
+                    child: Container(
+                      color: Color.fromARGB(255, 173, 255, 245),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Row(
+                            children: [
+                              Icon(
+                                Icons.watch,
+                              ),
+                              Column(
+                                children: [
+                                  Row(
+                                    children: [
+                                      Text("Basic of Designing"),
+                                    ],
+                                  ),
+                                  Row(
+                                    children: [
+                                      Text("1 hour, 25mins"),
+                                    ],
+                                  )
+                                ],
+                              ),
+                            ],
+                          ),
+                          Column(
+                            children: [
+                              Icon(
+                                Icons.feed,
+                              ),
+                            ],
+                          )
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+                Container(
+                  child: Padding(
+                    padding: const EdgeInsets.fromLTRB(18.0, 0.0, 18.0, 18.0),
+                    child: Container(
+                      color: Color.fromARGB(255, 173, 255, 245),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Row(
+                            children: [
+                              Icon(
+                                Icons.watch,
+                              ),
+                              Column(
+                                children: [
+                                  Row(
+                                    children: [
+                                      Text("Basic of Designing"),
+                                    ],
+                                  ),
+                                  Row(
+                                    children: [
+                                      Text("1 hour, 25mins"),
+                                    ],
+                                  )
+                                ],
+                              ),
+                            ],
+                          ),
+                          Column(
+                            children: [
+                              Icon(
+                                Icons.feed,
+                              ),
+                            ],
+                          )
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
               ],
             ),
           ),
+        ),
+        bottomNavigationBar: BottomNavigationBar(
+          items: const <BottomNavigationBarItem>[
+            BottomNavigationBarItem(
+              icon: Icon(Icons.home),
+              label: 'Home',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.explore),
+              label: 'Explore',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.chat),
+              label: 'Chat',
+            ),
+          ],
         ),
       ),
     );
